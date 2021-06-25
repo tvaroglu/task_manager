@@ -1,7 +1,7 @@
-<form action="/tasks" method="post">
+<form action="/tasks" method="POST">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <p><strong>Enter a new task:</strong></p>
-  <input type='text' name='task[title]'/><br><br>
-  <textarea name='task[description]'></textarea><br><br>
-  <input type='submit'/>
+  <input type="text" name="task[title]"/><br><br>
+  <textarea name="task[description]"></textarea><br><br>
+  <input type="submit"/>
 </form>
