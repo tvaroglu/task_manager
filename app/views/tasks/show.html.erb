@@ -3,4 +3,6 @@
 <h1><%= @task.title %></h1>
 <p><%= @task.description %></p>
 
-<a href="/tasks/<%= @task.id %>/edit">Edit</a>
+<form action="/tasks/<%= @task.id %>/edit">
+  <input type="submit" value="Edit Task"/>
+</form>

@@ -4,11 +4,15 @@
 <% @tasks.each do |task| %>
   <h3><a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
   <p><%= task.description %></p>
-  <a style="float:left; padding-right:10px;" href="/tasks/<%= task.id %>/edit">Edit Task</a>
+
+  <form style="float:left; padding-right:10px;" action="/tasks/<%= task.id %>/edit">
+    <input type="submit" value="Edit Task"/>
+  </form>
+
   <form style="float:left;" action="/tasks/<%= task.id %>" method="POST">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" value="Delete Task"/>
   </form>
-  <br>
+  <br><br>
 <% end %>
