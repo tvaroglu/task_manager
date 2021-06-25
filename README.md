@@ -38,7 +38,7 @@ $ rails dbconsole
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-```bash
-$ rails s
-```
-  [http://localhost:3000](http://localhost:3000)
+    ```bash
+    $ rails s
+    ```
+    [http://localhost:3000](http://localhost:3000)
