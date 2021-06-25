@@ -11,7 +11,7 @@ $ ruby -v
 ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin20]
 ```
 
-* System dependencies
+* [System dependencies](https://github.com/tvaroglu/task_manager/blob/main/Gemfile)
 ```bash
 $ rails -v
 Rails 5.2.6
@@ -41,4 +41,4 @@ $ rails dbconsole
 ```bash
 $ rails s
 ```
-[http://localhost:3000](http://localhost:3000)
+  [http://localhost:3000](http://localhost:3000)
